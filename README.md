@@ -1,44 +1,23 @@
-# Cases-study-Brighttutorial
-Case study 
+###Bright Coffee Shop Case Study 
 
+###Introduction
+This case spans between 6 months from jan to june of 2023 between 3 locations 
 
+###Problem statement
+Sales have been declining in the last 3 months and this has resulted in the company revenue going down and the lay off of employees. Most of the products are not sallingg
 
-SELECT COUNT(TRANSACTION_ID)  AS NUMBER_SALES,
-SUM(TRANSACTION_ID AND UNIT_PRICE)AS REVENUE_PER_TRANSACTION
+Becuase of the decline in revenue, a new CEO has been appointment to resecue in before the year and you tasked as a data analyst to a deep dive analysis on the producrt performance to help the CEO make data driven 
 
---------CALCULATE NUMBER OF SALES FROM OPENING AS MIN TIME AND MAX TIME AS  PEAK TIME---
-SELECT MIN(TRANSACTION_TIME)
-       MAX(TRANSACTION_TIME)
+###Aim 
+The aim of this project is to extract insights from the transcations at the coffee shoop to see the product performance and daily by locatrion and day of 
 
------CASE STATEMEMT BY CALCULATING TIME_BUCKETS----
-CASE
-WHEN TRANSACTION_TIME BETWEEN '06:00:00' AND '11:59:59' THEN 'MORNING'
-WHEN TRANSACTION_TIME BETWEEN '12:00:00' AND '17:59:59' THEN 'AFTERNOON'
-ELSE 'EVENING'
-END AS TIME_BUCKET,PRODUCT_CATEGORY,PRODUCT_TYPE,PRODUCT_DETAIL,STORE_LOCATION
+###Objective
+In order to achieve the aim the following steps will taken
+       - Create an acrticte using miro 
+       -Extract the transcational Data From the POS system
+       -Load the data into the snowflake Datawarehourse 
+       - Create sql script to aggregate  the data
+       - Create visuals on MS excel
+       -Write the insights on a presentation
 
-
-
-
-
-
-
-FROM
-"BRIGHTCOFFEESHOP"."SALES"."SALESDATA"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://miro.com/welcomeonboard/Y2ZOZk5sK041NnkrZVhjdTdZSE1WTFcxc2Z6cldJSy9ySUhCTWhJSFFCOW5nR05QVlU5dUJ0ODRMN3Z5MjBaVWFrekdPZmlERExBWUVoNzI5L1JUY1lpdkg1RmUvZ3FETHBydHk2RzNIMzdGWFpnWXJPcDMyYmt2ejVpN3ZtY1NBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=468711662902
+summary of findings 
